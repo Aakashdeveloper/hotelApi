@@ -1,0 +1,22 @@
+[
+    {
+        "_id":1,
+        "trip":"1",
+        "name": "Business"
+    },
+    {
+        "_id":2,
+        "trip":"2",
+        "name": "Holiday"
+    },
+    {
+        "_id":3,
+        "trip":"3",
+        "name": "Travel"
+    },
+    {
+        "_id":4,
+        "trip":"4",
+        "name": "Luxury"
+    }
+]

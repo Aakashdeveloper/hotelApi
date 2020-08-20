@@ -1,0 +1,22 @@
+[
+    {
+        "_id":1,
+        "roomtype":"1",
+        "name":"Deluxe Room"
+    },
+    {
+        "_id":2,
+        "roomtype":"2",
+        "name": "Premiere Rooms"
+    },
+    {
+        "_id":3,
+        "roomtype":"3",
+        "name":"Travel"
+    },
+    {
+        "_id":4,
+        "roomtype":"4",
+        "name":"Semi Deluxe Room"
+    }
+]

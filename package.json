@@ -1,0 +1,23 @@
+{
+  "name": "zomatoapi",
+  "version": "1.0.0",
+  "description": "This are the api for project",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "mongo"
+  ],
+  "author": "edureka",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongodb": "^3.5.9"
+  }
+}
