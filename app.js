@@ -126,16 +126,8 @@ app.get('/allBooking',(req,res) => {
 //Post
 app.post('/placeBooking',(req,res)=>{
     console.log(">>>>>>",req.body);
-    var data = {
-        _id:req.body.order_id,
-        name:req.body.name,
-        phone:req.body.phone,
-        email:req.body.email,
-        address:req.body.address,
-        rest_id:req.body.rest_id,
-        person:req.body.person
-    }
-    db.collection('booking').insert(data,(err,result) => {
+
+    db.collection('booking').insert(req.body,(err,result) => {
         if(err){
             throw err
         }else{
