@@ -127,11 +127,11 @@ app.get('/allBooking',(req,res) => {
 app.post('/placeBooking',(req,res)=>{
     console.log(">>>>>>",req.body);
 
-    db.collection('booking').insert(req.body,(err,result) => {
+    db.collection('booking').insertOne(req.body,(err,result) => {
         if(err){
             throw err
         }else{
-          console.log('Booking Places')
+            res.redirect('/')
         }
     });
 });
