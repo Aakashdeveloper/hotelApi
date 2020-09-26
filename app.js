@@ -139,7 +139,7 @@ app.post('/placeBooking',(req,res)=>{
     });
 });
 
-MongoClient.connect(uri,{ useNewUrlParser: true },(err,client) => {
+MongoClient.connect(uri,{ useUnifiedTopology: true },(err,client) => {
     if(err) console.log(err)
     db= client.db('hotels');
     app.listen(port,(err) => {
