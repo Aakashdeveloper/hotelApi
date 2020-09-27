@@ -127,7 +127,7 @@ app.get('/allBooking',(req,res) => {
 
 //placeorder
 //Post
-app.post('/placeBooking',(req,res)=>{
+app.post('/placeBookings',(req,res)=>{
     console.log(">>>>>>",req.body);
 
     db.collection('booking').insertOne(req.body,(err,result) => {
