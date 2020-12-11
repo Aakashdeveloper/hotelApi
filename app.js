@@ -88,7 +88,7 @@ app.get('/hoteltrip/:trip',(req,res) => {
     if(req.params.trip){
         query = {"trip":req.params.trip}
     } 
-    db.collection('hotelname').find(query).toArray((err,result) => {
+    db.collection('simplehotel').find(query).toArray((err,result) => {
         if(err) throw err;
         res.status(200).send(result)
     })
