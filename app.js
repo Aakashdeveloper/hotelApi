@@ -82,7 +82,7 @@ app.get('/hotellist/:trip',(req,res) => {
     })
 })
 
-app.get('/hotellist/:trip',(req,res) => {
+app.get('/hoteltrip/:trip',(req,res) => {
     var query = {}
     var sort = {cost:1}
     if(req.params.trip){
