@@ -82,6 +82,18 @@ app.get('/hotellist/:trip',(req,res) => {
     })
 })
 
+app.get('/hotellist/:trip',(req,res) => {
+    var query = {}
+    var sort = {cost:1}
+    if(req.params.trip){
+        query = {"trip":req.params.trip}
+    } 
+    db.collection('hotelname').find(query).toArray((err,result) => {
+        if(err) throw err;
+        res.status(200).send(result)
+    })
+})
+
 //hotels
 app.get('/hotelall',(req,res) => {
     db.collection('hotelname').find({}).toArray((err,result) => {
