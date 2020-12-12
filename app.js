@@ -93,7 +93,7 @@ app.get('/hoteltrip/:trip',(req,res) => {
     var query = {}
     var sort = {cost:1}
     if(req.params.trip){
-        query = {"tripType":req.params.trip}
+        query = {"tripType":Number(req.params.trip)}
     } 
     db.collection('simplehotel').find(query).toArray((err,result) => {
         if(err) throw err;
