@@ -81,6 +81,13 @@ app.get('/hotellist/:trip',(req,res) => {
         res.status(200).send(result)
     })
 })
+app.get('/hoteltrip',(req,res) => {
+    db.collection('simplehotel').find({}).toArray((err,result) => {
+        if(err) throw err;
+        res.status(200).send(result)
+    })
+})
+
 
 app.get('/hoteltrip/:trip',(req,res) => {
     var query = {}
